@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    
+    <h1>Wisielec</h1>
+    <div id="szubienica">
+        <img src="img/wisielec.jpg" alt="" />
+    </div>
+    <div id="plansza"></div>
+    <div id="alfabet"></div>
+    <div id="clear:both;"></div>
+    <div id= "box"></div>
+    <div id ="klawiatura"></div>
+    
+
+    <table id="tabela"></table>
+    <script>
+            var alfabet = [];
+    for(let i =65; i <= 90; i++){
+        alfabet.push(String.fromCharCode(i));
+        }
+        
+    alfabet.forEach(element =>  {
+        litera = document.createElement('button');
+        litera.textContent = element
+        litera.id = "button" +Element
+        litera.addEventListener("click",klikniecie);
+        document.getElementById("klawiatura").appendChild(litera) 
+
+     
+    });
+    
+    
+    function klikniecie(event){
+        let litera = event.srcElement.innerHTML;
+        console.log(litera)
+    }
+    
+    var slowo = window.prompt("Podaj słowo: ")
+    
+    for(var i = 0 ; i < slowo.length ; i++)
+    { 
+        document.getElementById("box").innerHTML += "_ ";
+    }
+
+    </script>
+        
+        
+    
+</body>
+</html>

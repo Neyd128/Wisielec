@@ -1,0 +1,41 @@
+body
+{
+    background-color: dimgray;
+    font-size: 26px;
+}
+
+h1
+{
+    text-align: center;
+}
+#pojemnik
+{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#plansza
+{
+    width: 900px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    
+}
+
+#box
+{
+    text-align: center;
+    
+}
+
+
+#klawiatura
+{
+    text-align: center;
+}
+
+
